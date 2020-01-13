@@ -5,7 +5,7 @@
     <packaging>pom</packaging>
     <modules>
         <module>microservice-springcloud-api</module>
-        <module>microservicespringcloudproviderdept-8001</module>
+        <module>microservice-springcloud-provider-dept-8001</module>
     </modules>
     <parent>
         <groupId>org.springframework.boot</groupId>
