@@ -6,6 +6,7 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="microservicespringcloudconsumerdept80" />
         <module name="microservice-springcloud-provider-dept-8001" />
         <module name="microservicespringcloudapi" />
       </profile>
@@ -14,6 +15,7 @@
       <module name="microservice-springcloud" target="1.8" />
       <module name="microservice-springcloud-provider-dept-8001" target="1.8" />
       <module name="microservicespringcloudapi" target="1.8" />
+      <module name="microservicespringcloudconsumerdept80" target="1.8" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
@@ -21,6 +23,7 @@
       <module name="microservice-springcloud" options="-parameters" />
       <module name="microservice-springcloud-provider-dept-8001" options="-parameters" />
       <module name="microservicespringcloudapi" options="-parameters" />
+      <module name="microservicespringcloudconsumerdept80" options="-parameters" />
     </option>
   </component>
 </project>

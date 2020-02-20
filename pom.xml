@@ -6,6 +6,7 @@
     <modules>
         <module>microservice-springcloud-api</module>
         <module>microservice-springcloud-provider-dept-8001</module>
+        <module>microservice-springcloud-consumer-dept-80</module>
     </modules>
     <parent>
         <groupId>org.springframework.boot</groupId>
@@ -20,15 +21,15 @@
     <description>Demo project for Spring Boot</description>
 
     <properties>
-        <java.version>1.8</java.version>
-        <spring-cloud.version>Hoxton.RELEASE</spring-cloud.version>
-        <maven.compiler.source>1.8</maven.compiler.source>
-        <maven.compiler.target>1.8</maven.compiler.target>
-        <junit.version>4.12</junit.version>
-        <log4j.version>1.2.17</log4j.version>
-        <lombok.version>1.16.18</lombok.version>
-        <mybatis.version>1.3.0</mybatis.version>
-    </properties>
+    <java.version>1.8</java.version>
+    <spring-cloud.version>Hoxton.RELEASE</spring-cloud.version>
+    <maven.compiler.source>1.8</maven.compiler.source>
+    <maven.compiler.target>1.8</maven.compiler.target>
+    <junit.version>4.12</junit.version>
+    <log4j.version>1.2.17</log4j.version>
+    <lombok.version>1.16.18</lombok.version>
+    <mybatis.version>1.3.0</mybatis.version>
+</properties>
     <dependencies>
         <dependency>
             <groupId>org.springframework.cloud</groupId>
