@@ -6,35 +6,18 @@
         <artifactId>microservice-springcloud</artifactId>
         <groupId>com.springcloud.learning</groupId>
         <version>0.0.1-SNAPSHOT</version>
+        <relativePath>../pom.xml</relativePath>
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>microservice-springcloud-consumer-dept-80</artifactId>
-    <description>部门微服务消费者</description>
+    <artifactId>microservice-springcloud-eureka-7001</artifactId>
 
     <dependencies>
-        <dependency><!-- 引入自己定义的api通用包，可以使用Dept部门Entity -->
-            <groupId>com.springcloud.learning</groupId>
-            <artifactId>microservice-springcloud-api</artifactId>
-            <version>${project.version}</version>
-        </dependency>
-        <!-- Ribbon相关 -->
+        <!--eureka-server服务端 -->
         <dependency>
             <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-starter-eureka</artifactId>
+            <artifactId>spring-cloud-starter-eureka-server</artifactId>
             <version>1.4.2.RELEASE</version>
-        </dependency>
-        <dependency>
-            <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-starter-ribbon</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-starter-config</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
         <!-- 修改后立即生效，热部署 -->
         <dependency>
@@ -47,5 +30,4 @@
             <artifactId>spring-boot-devtools</artifactId>
         </dependency>
     </dependencies>
-
 </project>
