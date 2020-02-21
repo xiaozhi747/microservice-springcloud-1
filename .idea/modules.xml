@@ -7,6 +7,8 @@
       <module fileurl="file://$PROJECT_DIR$/microservice-springcloud-api/microservicespringcloudapi.iml" filepath="$PROJECT_DIR$/microservice-springcloud-api/microservicespringcloudapi.iml" />
       <module fileurl="file://$PROJECT_DIR$/microservice-springcloud-consumer-dept-80/microservicespringcloudconsumerdept80.iml" filepath="$PROJECT_DIR$/microservice-springcloud-consumer-dept-80/microservicespringcloudconsumerdept80.iml" />
       <module fileurl="file://$PROJECT_DIR$/microservice-springcloud-eureka-7001/microservicespringcloudeureka7001.iml" filepath="$PROJECT_DIR$/microservice-springcloud-eureka-7001/microservicespringcloudeureka7001.iml" />
+      <module fileurl="file://$PROJECT_DIR$/microservice-springcloud-eureka-7002/microservicespringcloudeureka7002.iml" filepath="$PROJECT_DIR$/microservice-springcloud-eureka-7002/microservicespringcloudeureka7002.iml" />
+      <module fileurl="file://$PROJECT_DIR$/microservice-springcloud-eureka-7003/microservicespringcloudeureka7003.iml" filepath="$PROJECT_DIR$/microservice-springcloud-eureka-7003/microservicespringcloudeureka7003.iml" />
     </modules>
   </component>
 </project>

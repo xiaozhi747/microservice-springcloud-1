@@ -6,11 +6,10 @@
         <artifactId>microservice-springcloud</artifactId>
         <groupId>com.springcloud.learning</groupId>
         <version>0.0.1-SNAPSHOT</version>
-        <relativePath>../pom.xml</relativePath>
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>microservice-springcloud-eureka-7001</artifactId>
+    <artifactId>microservice-springcloud-eureka-7002</artifactId>
     <properties>
         <eureka.version>1.4.7.RELEASE</eureka.version>
         <springloaded.version>1.2.8.RELEASE</springloaded.version>

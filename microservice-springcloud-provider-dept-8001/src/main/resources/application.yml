@@ -9,7 +9,7 @@ mybatis:
 
 spring:
   application:
-    name: DeptProvider8001App
+    name: microservice-cloud-dept-provider
   datasource:
     type: com.alibaba.druid.pool.DruidDataSource            # 当前数据源操作类型
     driver-class-name: com.mysql.jdbc.Driver              # mysql驱动包
@@ -22,17 +22,17 @@ spring:
       max-total: 5                                          # 最大连接数
       max-wait-millis: 200                                  # 等待连接获取的最大超时时间
 
-#eureka:
-#  client: #客户端注册进eureka服务列表内
-#    service-url:
-#      defaultZone: http://eureka7001.com:7001/eureka/,http://eureka7002.com:7002/eureka/,http://eureka7003.com:7003/eureka/
-#  instance:
-#    instance-id: microservicecloud-dept8001   #自定义服务名称信息
-#    prefer-ip-address: true     #访问路径可以显示IP地址
+eureka:
+  client: #客户端注册进eureka服务列表内
+    service-url:
+#      defaultZone: http://localhost:7001/eureka/
+        defaultZone: http://eureka7001.com:7001/eureka/,http://eureka7002.com:7002/eureka/,http://eureka7003.com:7003/eureka/
+  instance:
+    instance-id: microservice-cloud-dept-provider-8001   #自定义服务名称信息
+    prefer-ip-address: true     #访问路径可以显示IP地址
 
-
-#info:
-#  app.name: sef-microservicecloud
-#  company.name: www.sef.com
-#  build.artifactId: $project.artifactId$
-#  build.version: $project.version$
+info:
+  app.name: microservice-springcloud-1
+  company.name: www.springcloud.com
+  build.artifactId: @project.artifactId@
+  build.version: @project.version@

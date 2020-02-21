@@ -20,7 +20,7 @@ public class DeptController {
     @Autowired
     private DeptService deptService;
     @Autowired
-    private DiscoveryClient discoveryClient;
+    private DiscoveryClient client;
 
     @RequestMapping(value = "/dept/add",method = RequestMethod.POST)
     public boolean addDept(@RequestBody Dept deptEntity) {
@@ -43,11 +43,12 @@ public class DeptController {
      */
     @RequestMapping(value = "/dept/discovery",method = RequestMethod.GET)
     public Object discovery(){
-        List<String> list = discoveryClient.getServices();
+        List<String> list = client.getServices();
+        System.out.println("*****************"+list);
         System.out.println("总共有多少个微服务"+list.size());
 
         //查询STUDY-SPRINGCLOUD-DEPT 服务
-        List<ServiceInstance> instances = discoveryClient.getInstances("STUDY-SPRINGCLOUD-DEPT");
+        List<ServiceInstance> instances = client.getInstances("MICROSERVICE-CLOUD-DEPT-PROVIDER");
 
         //打印STUDY-SPRINGCLOUD-DEPT服务信息
         for (ServiceInstance element :instances){
@@ -56,7 +57,7 @@ public class DeptController {
             System.out.println(element.getPort());
             System.out.println(element.getUri());
         }
-        return this.discoveryClient;
+        return this.client;
 
     }
 

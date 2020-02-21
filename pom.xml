@@ -8,6 +8,8 @@
         <module>microservice-springcloud-provider-dept-8001</module>
         <module>microservice-springcloud-consumer-dept-80</module>
         <module>microservice-springcloud-eureka-7001</module>
+        <module>microservice-springcloud-eureka-7002</module>
+        <module>microservice-springcloud-eureka-7003</module>
     </modules>
     <parent>
         <groupId>org.springframework.boot</groupId>
@@ -96,6 +98,27 @@
             </dependency>
         </dependencies>
     </dependencyManagement>
+
+    <build>
+        <finalName>microservice-springcloud-1</finalName>
+        <resources>
+            <resource>
+                <directory>src/main/resources</directory>
+                <filtering>true</filtering>
+            </resource>
+        </resources>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-resources-plugin</artifactId>
+                <configuration>
+                    <delimiters>
+                        <delimit>@</delimit>
+                    </delimiters>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
 
     <!--<build>-->
         <!--<plugins>-->
